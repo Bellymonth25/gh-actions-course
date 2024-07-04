@@ -1,9 +1,9 @@
 name: 02 - Workflow Events
-on: push
+on: [push, pull_request, workflow_dispatch]
 
 jobs:
   echo:
     runs-on: ubuntu-latest
     steps:
       - name: Show the trigger
-        run: echo "On Push event triggered."
+        run: echo "On push or on pull request event triggered."
