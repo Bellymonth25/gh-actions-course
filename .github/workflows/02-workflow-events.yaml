@@ -6,4 +6,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Show the trigger
-        run: echo "On push or on pull request event triggered."
+        run: echo "Change description to test the 'pull_request' event."
